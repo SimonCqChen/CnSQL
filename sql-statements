@@ -1,0 +1,4 @@
+SELECT * FROM customers WHERE customers.country = 'USA'
+SELECT customers.phone FROM customers WHERE customers.country = 'USA'
+SELECT offices.city FROM offices WHERE offices.officeCode = 1
+SELECT products.productName, products.buyPrice FROM products WHERE products.buyPrice > 10
