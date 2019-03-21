@@ -1,4 +1,20 @@
 SELECT * FROM customers WHERE customers.country = 'USA'
+SELECT customers.phone FROM customers
 SELECT customers.phone FROM customers WHERE customers.country = 'USA'
+SELECT * FROM employees
+SELECT * FROM employees
+SELECT COUNT(*) FROM employees
+SELECT COUNT(*) FROM offices
+SELECT email FROM employees
+SELECT * FROM offices
+SELECT offices.officeCode FROM offices
 SELECT offices.city FROM offices WHERE offices.officeCode = 1
+SELECT offices.country FROM offices WHERE offices.officeCode = 1
+SELECT offices.state FROM offices WHERE offices.officeCode = 1
+SELECT offices.phone FROM offices WHERE offices.officeCode = 1
+SELECT offices.city, offices.country FROM offices WHERE offices.officeCode = 1
 SELECT products.productName, products.buyPrice FROM products WHERE products.buyPrice > 10
+SELECT * FROM customers WHERE customers.country = 'USA' LIMIT 0, 100
+SELECT AVG(products.buyPrice) FROM products
+SELECT * FROM customers INNER JOIN payments WHERE customers.customerNumber = 1
+SELECT status, orderDate FROM orders WHERE orderNumber = 1
